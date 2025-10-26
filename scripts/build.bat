@@ -1,0 +1,16 @@
+@echo off
+echo Starting deployment preparation...
+
+echo Installing dependencies...
+call npm install
+
+echo Generating Prisma Client...
+call npx prisma generate
+
+echo Running database migrations...
+call npx prisma migrate deploy
+
+echo Building application...
+call npm run build
+
+echo Build completed successfully!

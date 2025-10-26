@@ -1,0 +1,10 @@
+# Render Deployment Configuration
+# Build Command: npm install && npx prisma generate && npm run build
+# Start Command: npm run start
+
+# Node version
+NODE_VERSION=20.x
+
+# Build settings
+NPM_CONFIG_PRODUCTION=false
+SKIP_ENV_VALIDATION=true
